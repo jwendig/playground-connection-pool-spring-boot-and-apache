@@ -1,0 +1,8 @@
+client-app:
+  build: ./client-app
+  ports:
+    - "18080:8080"
+server-app:
+  build: ./server-app
+  ports:
+    - "18181:8080"
