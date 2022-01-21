@@ -2,10 +2,14 @@ client-app:
   build: ./client-app
   ports:
     - "18080:8080"
+  links:
+    - server-apache
+
 server-app:
   build: ./server-app
   ports:
     - "18181:8080"
+
 server-apache:
   build: ./server-apache
   ports:
