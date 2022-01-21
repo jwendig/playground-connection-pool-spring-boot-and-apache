@@ -11,4 +11,8 @@ GET http://localhost:18080/hello
 
 ###
 # client-app which makes internal request to server-app through server-apache
-GET http://localhost:18080/request-to-server-app
+GET http://localhost:18080/request-to-server-app-via-get
+
+###
+# client-app which makes internal request to server-app through server-apache
+GET http://localhost:18080/request-to-server-app-via-post
