@@ -20,16 +20,8 @@ public class ClientAppController {
 
     @GetMapping("/request-to-server-app")
     public String requestToServerApp(){
-        try {
             String responseFromServerApp = restTemplate.getForObject("http://server-apache/hello", String.class);
             return "answer from server-app: " + responseFromServerApp;
-        }catch (Exception e){
-            log.error("fuck", e);
-
-            return "error from server-app: " + e.getMessage();
-        }
-
-
     }
 
 }
