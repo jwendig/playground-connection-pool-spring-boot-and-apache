@@ -14,13 +14,19 @@ Install docker and docker-compose
 
 ## How to use
 
+Build the maven projects
+```
+maven clean package
+```
+
 Start the servers via docker-compose
 ```
 docker-compose up
 ```
 
-**Note**: When you make changes in one of the apps or in the apache, docker have to rebuild the containers
+**Note**: When you make changes in one of the apps or in the apache, docker have to rebuild the apps and the container images
 ```
+maven clean package
 docker-compose up --build
 ```
 
