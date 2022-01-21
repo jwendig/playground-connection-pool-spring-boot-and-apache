@@ -8,7 +8,7 @@ public class ServerRestController {
 
 	@GetMapping("/server-endpoint")
 	public String severEndpoint() {
-		return "";
+		return "I am in server";
 	}
 
 }

@@ -1,5 +1,7 @@
 client-app:
   build: ./client-app
+  links:
+    - "server-app:server-app"
   ports:
     - "18080:8080"
 server-app:
