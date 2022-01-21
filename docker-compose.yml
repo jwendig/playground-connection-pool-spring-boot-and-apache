@@ -6,3 +6,9 @@ server-app:
   build: ./server-app
   ports:
     - "18181:8080"
+server-apache:
+  build: ./server-apache
+  ports:
+    - "10081:80"
+  links:
+    - server-app
